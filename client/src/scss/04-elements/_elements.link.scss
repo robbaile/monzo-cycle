@@ -1,0 +1,31 @@
+@import '../01-settings/settings';
+@import '../02-tools/tools';
+
+
+a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    &:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+}
+
+
+
+a {
+    font-weight: 400;
+    color: $link-color;
+    text-decoration: underline;
+    text-decoration-color: #BCE7FD; //TODO: use a variable
+    padding-bottom:1px;
+
+    &:hover {
+        color: #148BDC; //TODO: use a variable
+        text-decoration-color: $link-color;
+    }
+    &:active {
+        color: #006EB3; //TODO: use a variable
+        text-decoration-color: #006EB3; //TODO: use a variable
+    }
+}

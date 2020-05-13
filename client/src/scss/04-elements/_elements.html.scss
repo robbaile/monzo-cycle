@@ -1,0 +1,14 @@
+@import '../01-settings/settings';
+@import '../02-tools/tools';
+
+html {
+	box-sizing: border-box;
+    // Sets a specific default `font-size` for user with `rem` type scales.
+	font-size: $root-font-size;
+    // Changes the default tap highlight to be completely transparent in iOS.
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}

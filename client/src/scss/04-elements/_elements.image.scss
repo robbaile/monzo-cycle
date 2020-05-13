@@ -1,0 +1,16 @@
+@import '../01-settings/settings';
+@import '../02-tools/tools';
+
+img {
+    // By default, `<img>`s are `inline-block`. This assumes that, and vertically
+    // centers them. This won't apply should you reset them to `block` level.
+    vertical-align: middle;
+    // Note: `<img>`s are deliberately not made responsive by default.
+    // For the rationale behind this, see the comments on the `.img-fluid` class.
+}
+
+figure {
+    // Normalize adds `margin` to `figure`s as browsers apply it inconsistently.
+    // We reset that to create a better flow in-page.
+    margin: 0 0 1rem;
+}

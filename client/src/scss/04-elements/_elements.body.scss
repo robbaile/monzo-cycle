@@ -1,0 +1,16 @@
+@import '../01-settings/settings';
+@import '../02-tools/tools';
+
+
+body {
+    font-family: $font-family-base;
+    @include font-size($font-size-base);
+    background: $body-bg-base;
+    color: $font-color-base;
+    line-height: $line-height-base;
+    padding: $body-padding;
+
+    @include breakpoint(500px) {
+        padding: $body-padding--desktop;
+    }
+}

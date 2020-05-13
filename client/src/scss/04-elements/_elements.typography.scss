@@ -1,0 +1,68 @@
+@import '../01-settings/settings';
+@import '../02-tools/tools';
+
+
+$heading-spacing-unit: 20px !default;
+
+h1 {
+    margin: 0 0 #{$heading-spacing-unit} 0;
+    color: $headings-color;
+}
+h2 {
+    margin: 0 0 #{$heading-spacing-unit} 0;
+    color: $headings-color;
+}
+h3 {
+    margin: 0 0 #{$heading-spacing-unit} 0;
+    color: $headings-color;
+}
+h4 {
+    margin: 0 0 #{$heading-spacing-unit} 0;
+    color: $headings-color;
+}
+h5 {
+    margin: 0 0 #{$heading-spacing-unit} 0;
+    color: $headings-color;
+}
+h6 {
+    margin: 0 0 #{$heading-spacing-unit} 0;
+    color: $headings-color;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+p {
+    margin: 0 0 ( $spacing-unit / 2 ) 0;
+    font-weight: 300;
+    @include font-size(15px);
+
+    @include breakpoint(700px){
+        @include font-size(16px);
+    }
+}
+
+address {
+  font-style: normal;
+  line-height: inherit;
+  margin-bottom: ( $spacing-unit / 2 );
+}
+
+blockquote {
+    margin: 0 0 ( $spacing-unit / 2 ) 0;
+}
+
+pre {
+    // Remove browser default top margin
+    margin-top: 0;
+    // Reset browser default of `1em` to use `rem`s
+	margin-bottom: ( $spacing-unit / 2 );
+}
+
+output {
+    display: inline-block;
+    //  font-size: $font-size-base;
+    //  line-height: $line-height;
+    //  color: $input-color;
+}

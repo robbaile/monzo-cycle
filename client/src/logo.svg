@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71">
+  <g id="Group_5" data-name="Group 5" transform="translate(-140 159)">
+    <g id="Group_4" data-name="Group 4" transform="translate(150.943 -136.515)">
+      <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(30.057 8.515)" fill="none" stroke="#eb5183" stroke-width="2">
+        <ellipse cx="9" cy="8.5" rx="9" ry="8.5" stroke="none"/>
+        <ellipse cx="9" cy="8.5" rx="8" ry="7.5" fill="none"/>
+      </g>
+      <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(0.057 8.515)" fill="none" stroke="#eb5183" stroke-width="2">
+        <ellipse cx="9" cy="8.5" rx="9" ry="8.5" stroke="none"/>
+        <ellipse cx="9" cy="8.5" rx="8" ry="7.5" fill="none"/>
+      </g>
+      <g id="Group_3" data-name="Group 3" transform="translate(9.219 2.532)">
+        <path id="Path_4" data-name="Path 4" d="M67.345-196.725,50.054-184.178,48.4-196.725l-9.331,11.667,10.985.879" transform="translate(-39.069 200.265)" fill="none" stroke="#eb5183" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_5" data-name="Path 5" d="M69.362-196.725h19.06s.23,10.285,1.273,11.507" transform="translate(-59.838 200.265)" fill="none" stroke="#eb5183" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_6" data-name="Path 6" d="M62.094-2.859l-.436-3.82s10.313.421,3.488,4.039" transform="translate(-33.788 6.678)" fill="none" stroke="#eb5183" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <path id="Path_7" data-name="Path 7" d="M50.876-202.134V-206.3H48.663v-1.877s6.11-.064,6.138,1.877H50.876" transform="translate(-32.538 208.18)" fill="none" stroke="#eb5183" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(140 -159)" fill="none" stroke="#eb5183" stroke-width="3">
+      <circle cx="35.5" cy="35.5" r="35.5" stroke="none"/>
+      <circle cx="35.5" cy="35.5" r="34" fill="none"/>
+    </g>
+  </g>
+</svg>

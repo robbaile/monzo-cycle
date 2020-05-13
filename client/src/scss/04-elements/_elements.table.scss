@@ -1,0 +1,21 @@
+@import '../01-settings/settings';
+@import '../02-tools/tools';
+
+
+table {
+    // Reset for nesting within parents with `background-color`.
+    background-color: $table-bg;
+}
+
+caption {
+    @if not $table-caption-enabled {display:none;}
+    padding-top: $table-cell-padding;
+    padding-bottom: $table-cell-padding;
+    caption-side: $table-caption-location;
+    text-align: left;
+}
+
+th {
+    // Centered by default, but left-align-ed to match the `td`s below.
+    text-align: left;
+}
