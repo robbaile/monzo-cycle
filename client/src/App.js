@@ -7,7 +7,7 @@ class App extends React.Component {
   handleClick = () => {
     axios.get("/login")
       .then(res => {
-        window.location.href = `https://auth.monzo.com/?client_id=${res.data.id}&redirect_uri=${res.data.redirect_url}&response_type=code` 
+        window.location.href = `https://auth.monzo.com/?client_id=${res.data.id}&redirect_uri=${res.data.redirect_uri}&response_type=code` 
         console.log(res);
       }).catch(err => console.log(err));
   }

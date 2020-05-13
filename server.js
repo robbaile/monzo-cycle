@@ -24,26 +24,34 @@ app.get('/', (req, res) => res.json("hello world"));
 
 app.get('/login', (req, res) => {
     res.json({
-        id: process.env.client_id,
-        redirect_url: process.env.redirect_url
-    })
-})
+        id: process.env.CLIENT_ID,
+        redirect_uri: process.env.REDIRECT_URI_ENCODED,
+        state:process.env.STATE
+    });
+});
 
-app.post('/oauth/callback', (req, res) => {
-    console.log("hit")
+app.get('/oauth/callback', (req, res) => {
+    global.code = req.query.code;
+    let client_id = process.env.CLIENT_ID;
+    let client_secret = process.env.CLIENT_SECRET;
+    let redirect_uri = process.env.REDIRECT_URI;
+
     request.post({
         url: 'https://api.monzo.com/oauth2/token',
         form: {
             grant_type: 'authorization_code',
-            client_id: process.env.client_id,
-            client_secret: process.env.client_secret,
-            redirect_url: process.env.redirect_url,
-            response_type: 'code'
-        },
-    }), (err, res, body) => {
+            client_id,
+            client_secret,
+            redirect_uri,
+            code
+        }
+    },
+    (err, res, body) => {
         accessToken = JSON.parse(body);
         res.send(accessToken);
-    }
+        }
+    );
+
 });
 
 const port = process.env.PORT || 8000;
