@@ -4,27 +4,12 @@ import './css/app.css';
 import axios from 'axios';
 
 class App extends React.Component {
-  state = {
-    email: "",
-  };
-
-  handleChange = event => {
-    this.setState({ email: event.target.value });
-  }
-
-  handleSubmit = event => {
-    event.preventDefault();
-
-    const email = {
-      email: this.state.email
-    };
-
-    axios.post("http://localhost:8000/api/email", email)
+  handleClick = () => {
+    axios.get("/login")
       .then(res => {
+        window.location.href = `https://auth.monzo.com/?client_id=${res.data.id}&redirect_uri=${res.data.redirect_url}&response_type=code` 
         console.log(res);
-        this.setState({email: ''})
-        event.value = ""
-      })
+      }).catch(err => console.log(err));
   }
 
   render() {
@@ -34,10 +19,7 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           <div className="page__section">
             <p>Enter your monzo email below</p>
-            <form onSubmit={this.handleSubmit} method="POST" action="/api/user" className="page__form">
-              <input onChange={this.handleChange} className="page__form--input" type="text" name="monzo-email" value={this.state.email} placeholder="email" />
-              <button className="page__form--button" type="submit">Go</button>
-            </form>
+            <button onClick={this.handleClick} className="page__form--button">Go</button>
           </div>
           <div className="page__background"></div>
       </div>
